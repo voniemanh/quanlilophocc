@@ -54,7 +54,7 @@ function ListStudent() {
               </td>
               <td>
                 <button className="delete-btn" onClick={() => handleDelete(student.id)}>
-                  ❌ Delete
+                  Delete
                 </button>
               </td>
             </tr>
