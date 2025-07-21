@@ -1,6 +1,6 @@
 import {Link, Route, Routes} from 'react-router-dom';
-import ListStudent from './ListStudent';
-import AddStudent from './AddStudent';
+import ListStudent from './components/ListStudent';
+import AddStudent from './components/AddStudent';
 
 function App() {
   return (<>
