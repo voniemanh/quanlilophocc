@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 function DetailsStudent(){
@@ -28,6 +29,7 @@ function DetailsStudent(){
       <p>Name: {student.name}</p>
       <p>Class: {student.class}</p>
       <p>GPA: {student.gpa}</p>
+      <button><Link to="/students">Back To ListStudent</Link></button>
     </div>
   );
 }
