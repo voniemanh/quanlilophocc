@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './ListStudent.css';
+import { Link } from 'react-router-dom';
 
 function ListStudent() {
   const [students, setStudents] = useState([]);
@@ -24,6 +25,7 @@ function ListStudent() {
   return (
     <div className="container">
       <h1 className="title">📚 List of Students</h1>
+      <button><Link to={"/add-student"}>Add</Link></button>
       <table className="student-table">
         <thead>
           <tr>
@@ -56,6 +58,8 @@ function ListStudent() {
                 <button className="delete-btn" onClick={() => handleDelete(student.id)}>
                   Delete
                 </button>
+                <button className="view-btn">
+                  <Link to={`/view-student/${student.id}`}>View</Link></button>
               </td>
             </tr>
           ))}

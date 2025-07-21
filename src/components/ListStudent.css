@@ -37,3 +37,15 @@
   cursor: pointer;
   border-radius: 4px;
 }
+.view-btn {
+  background-color: #3498db;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.view-btn a {
+  text-decoration: none;  
+  color: inherit;         
+}

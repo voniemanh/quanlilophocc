@@ -36,6 +36,184 @@
           "teacher": "Thầy Quang"
         }
       ]
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn C",
+      "class": "10A1",
+      "gpa": 9.1,
+      "grades": [
+        {
+          "subject": "Hóa",
+          "score": 9.5,
+          "comment": "Xuất sắc",
+          "date": "2024-06-01T09:00:00.000Z",
+          "teacher": "Cô Hương"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Phạm Thị D",
+      "class": "10A3",
+      "gpa": 6.5,
+      "grades": [
+        {
+          "subject": "Toán",
+          "score": 6,
+          "comment": "Cần ôn luyện thêm",
+          "date": "2024-05-20T08:00:00.000Z",
+          "teacher": "Thầy Hải"
+        },
+        {
+          "subject": "Anh",
+          "score": 7,
+          "comment": "Tạm ổn",
+          "date": "2024-06-11T08:00:00.000Z",
+          "teacher": "Cô Mai"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Ngô Minh E",
+      "class": "10A2",
+      "gpa": 7.2,
+      "grades": [
+        {
+          "subject": "Sử",
+          "score": 8,
+          "comment": "Nắm bài tốt",
+          "date": "2024-05-15T10:00:00.000Z",
+          "teacher": "Thầy Trí"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Hoàng Thị F",
+      "class": "10A1",
+      "gpa": 9.5,
+      "grades": [
+        {
+          "subject": "Sinh",
+          "score": 10,
+          "comment": "Rất xuất sắc",
+          "date": "2024-06-01T07:30:00.000Z",
+          "teacher": "Cô An"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Đặng Văn G",
+      "class": "10A4",
+      "gpa": 5.9,
+      "grades": [
+        {
+          "subject": "Văn",
+          "score": 5,
+          "comment": "Cần cải thiện diễn đạt",
+          "date": "2024-05-10T09:45:00.000Z",
+          "teacher": "Thầy Sơn"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Nguyễn Thị H",
+      "class": "10A2",
+      "gpa": 8.8,
+      "grades": [
+        {
+          "subject": "Địa",
+          "score": 9,
+          "comment": "Học đều",
+          "date": "2024-06-12T08:00:00.000Z",
+          "teacher": "Thầy Việt"
+        },
+        {
+          "subject": "Toán",
+          "score": 8.5,
+          "comment": "Ổn định",
+          "date": "2024-06-01T08:30:00.000Z",
+          "teacher": "Cô Lan"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Trịnh Văn I",
+      "class": "10A3",
+      "gpa": 7.0,
+      "grades": [
+        {
+          "subject": "Anh",
+          "score": 7,
+          "comment": "Giao tiếp tốt",
+          "date": "2024-06-05T11:00:00.000Z",
+          "teacher": "Cô Mai"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Bùi Thị K",
+      "class": "10A5",
+      "gpa": 6.2,
+      "grades": [
+        {
+          "subject": "Sinh",
+          "score": 6,
+          "comment": "Chưa hiểu bài rõ",
+          "date": "2024-05-25T10:30:00.000Z",
+          "teacher": "Thầy Long"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Lý Minh L",
+      "class": "10A2",
+      "gpa": 9.3,
+      "grades": [
+        {
+          "subject": "Lý",
+          "score": 9,
+          "comment": "Tư duy tốt",
+          "date": "2024-06-10T09:15:00.000Z",
+          "teacher": "Thầy Quang"
+        },
+        {
+          "subject": "Hóa",
+          "score": 9.5,
+          "comment": "Chăm chỉ",
+          "date": "2024-06-15T08:00:00.000Z",
+          "teacher": "Cô Hương"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Trần Quốc M",
+      "class": "10A1",
+      "gpa": 4.8,
+      "grades": [
+        {
+          "subject": "Toán",
+          "score": 4,
+          "comment": "Rất yếu",
+          "date": "2024-05-30T07:30:00.000Z",
+          "teacher": "Thầy Hải"
+        },
+        {
+          "subject": "Anh",
+          "score": 5,
+          "comment": "Chưa đạt yêu cầu",
+          "date": "2024-05-30T08:00:00.000Z",
+          "teacher": "Cô Mai"
+        }
+      ]
     }
   ]
 }
