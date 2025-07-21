@@ -60,6 +60,7 @@ function ListStudent() {
                 </button>
                 <button className="view-btn">
                   <Link to={`/view-student/${student.id}`}>View</Link></button>
+                <button className='view-btn'><Link to={`/edit-student/${student.id}`}>Edit</Link></button>
               </td>
             </tr>
           ))}

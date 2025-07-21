@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Nguyễn Văn A",
-      "class": "10A1",
+      "class": "10A12",
       "gpa": 8.5,
       "grades": [
         {
@@ -145,7 +145,7 @@
       "id": "9",
       "name": "Trịnh Văn I",
       "class": "10A3",
-      "gpa": 7.0,
+      "gpa": 7,
       "grades": [
         {
           "subject": "Anh",
