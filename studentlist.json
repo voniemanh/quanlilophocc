@@ -214,18 +214,6 @@
           "teacher": "Cô Mai"
         }
       ]
-    },
-    {
-      "id": "13",
-      "name": "android",
-      "class": "êr",
-      "gpa": 4,
-      "grades": [
-        {
-          "subject": "kjfhewfrewf",
-          "score": null
-        }
-      ]
     }
   ]
 }
