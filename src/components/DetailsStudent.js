@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { STUDENT_API } from '../config';
 
 
 function DetailsStudent(){
@@ -9,7 +10,7 @@ function DetailsStudent(){
   const [student, setStudent] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:9999/students/${id}`)
+    axios.get(`${STUDENT_API}/${id}`)
       .then(response => {
         setStudent(response.data);
       })

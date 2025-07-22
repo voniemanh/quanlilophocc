@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { STUDENT_API } from '../config';
 
 function AddStudent() {
   const [form, setForm] = useState({
@@ -30,7 +31,7 @@ function AddStudent() {
       grades,
     };
 
-    axios.post('http://localhost:9999/students', newStudent)
+    axios.post(STUDENT_API, newStudent)
       .then(() => {
         alert('Student added successfully!');
         navigate('/students');

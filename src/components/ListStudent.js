@@ -2,12 +2,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './ListStudent.css';
 import { Link } from 'react-router-dom';
+import { STUDENT_API } from '../config';
 
 function ListStudent() {
   const [students, setStudents] = useState([]);
 
   const loadStudents = () => {
-    axios.get('http://localhost:9999/students')
+    axios.get(STUDENT_API)
       .then(response => setStudents(response.data))
       .catch(error => console.error("There was an error fetching the students!", error));
   };
@@ -17,7 +18,7 @@ function ListStudent() {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:9999/students/${id}`)
+    axios.delete(`${STUDENT_API}/${id}`)
       .then(() => setStudents(prev => prev.filter(student => student.id !== id)))
       .catch(error => console.error("There was an error deleting the student!", error));
   };
@@ -25,7 +26,7 @@ function ListStudent() {
   return (
     <div className="container">
       <h1 className="title">📚 List of Students</h1>
-      <button><Link to={"/add-student"}>Add</Link></button>
+      <button><Link to={"/add-student"}>Add New Student</Link></button>
       <table className="student-table">
         <thead>
           <tr>
@@ -55,12 +56,12 @@ function ListStudent() {
                 </ul>
               </td>
               <td>
-                <button className="delete-btn" onClick={() => handleDelete(student.id)}>
-                  Delete
-                </button>
                 <button className="view-btn">
                   <Link to={`/view-student/${student.id}`}>View</Link></button>
                 <button className='view-btn'><Link to={`/edit-student/${student.id}`}>Edit</Link></button>
+                <button className="delete-btn" onClick={() => handleDelete(student.id)}>
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

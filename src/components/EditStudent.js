@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import { STUDENT_API } from '../config';
 
 function EditStudent() {
   const { id } = useParams();
@@ -8,7 +9,7 @@ function EditStudent() {
   const [student, setStudent] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:9999/students/${id}`)
+    axios.get(`${STUDENT_API}/${id}`)
       .then(response => {
         setStudent(response.data);
       })
@@ -27,7 +28,7 @@ function EditStudent() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:9999/students/${id}`, student)
+    axios.put(`${STUDENT_API}/${id}`, student)
       .then(() => {
         alert('Student updated successfully!');
         navigate('/students');
