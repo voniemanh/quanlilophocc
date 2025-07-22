@@ -18,26 +18,31 @@ function AddStudent() {
     setForm(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleAddStudent = () => {
-    const grades = form.gradesText.split(',').map(item => {
-      const [subject, score] = item.trim().split(':');
-      return { subject: subject.trim(), score: parseFloat(score) };
-    });
+const handleAddStudent = () => {
+    axios.get(STUDENT_API)
+      .then(res => {
+        const maxId = Math.max(0, ...res.data.map(s => +s.id || 0));
+        const grades = form.gradesText.split(',').map(item => {
+          const [subject, score] = item.split(':');
+          return { subject: subject?.trim(), score: parseFloat(score) };
+        });
 
-    const newStudent = {
-      name: form.name,
-      class: form.className,
-      gpa: parseFloat(form.gpa),
-      grades,
-    };
+        const newStudent = {
+          id: (maxId + 1).toString(),
+          name: form.name,
+          class: form.className,
+          gpa: parseFloat(form.gpa),
+          grades,
+        };
 
-    axios.post(STUDENT_API, newStudent)
+        return axios.post(STUDENT_API, newStudent);
+      })
       .then(() => {
         alert('Student added successfully!');
         navigate('/students');
       })
-      .catch(error => {
-        console.error('There was an error adding the student!', error);
+      .catch(err => {
+        console.error('Error adding student:', err);
       });
   };
 
