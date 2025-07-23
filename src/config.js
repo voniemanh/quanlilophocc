@@ -1,3 +1,1 @@
-const URL = 'http://localhost:9999';
-
-export const STUDENT_API = `${URL}/students`;
+export const STUDENT_API = "http://localhost:9999/students";
